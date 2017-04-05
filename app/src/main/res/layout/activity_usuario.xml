@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daini.practica8abril.Activities.UsuarioActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="36dp"
+            android:src="@drawable/recado_logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nombre_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="¿Cómo te llamas?"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/direcion_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="¿Cual es tu dirección?" />
+        <EditText
+            android:id="@+id/direcion2_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="¿Dirección de donde hay que recoger?"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/recado_descripcion_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="¿Describe con que te puedo ayudar?"
+            android:inputType="textPersonName"/>
+
+
+
+
+        <Button
+            android:id="@+id/enviar_recado_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Enviar recado" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
