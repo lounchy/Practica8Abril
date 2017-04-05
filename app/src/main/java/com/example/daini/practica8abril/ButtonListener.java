@@ -106,7 +106,7 @@ public class ButtonListener implements View.OnClickListener {
         deServlet = gson.fromJson (s, new TypeToken<ArrayList<Recados>>() {
         }.getType());
         Log.d(getClass().getCanonicalName(), "Ha terminado  json = " + s);
-        Log.d(getClass().getCanonicalName(), " recados array list size ButtonListener " + deServlet.size());
+        Log.d(getClass().getCanonicalName(), " deServlet array list size ButtonListener " + deServlet.size());
 
     }
 }

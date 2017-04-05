@@ -35,7 +35,7 @@ public class AsyncTaskRecados extends AsyncTask<String, Void,String> {
         String devovler = null;
         URL url = null;
         HttpURLConnection httpURLConnection = null;
-        String strPost = "http://192.168.1.38:8080/Practica8Abril/ServletRecados";
+        String strPost = "http://83.34.164.84:8080/Recados/RecadosServlet";
         String mensaje_json = params[0];
         InputStream inputStream = null;
         InputStreamReader inputStreamReader = null;
@@ -70,10 +70,11 @@ public class AsyncTaskRecados extends AsyncTask<String, Void,String> {
 
     @Override
     protected void onPostExecute(String s) {
-        JuanActivity juanActivity = new JuanActivity();
-        juanActivity.getRecadosArrayList(s);
+
         ButtonListener buttonListener = new ButtonListener();
         buttonListener.getRecadosArrayList(s);
+        JuanActivity juanActivity = new JuanActivity();
+        juanActivity.getRecadosArrayList(s);
     }
 
     public void enviarAlServlet(ArrayList<Recados> arrayList){

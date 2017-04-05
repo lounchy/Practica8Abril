@@ -42,12 +42,13 @@ public class JuanActivity extends AppCompatActivity {
 
         ButtonListener buttonListener = new ButtonListener(this);
 
+
+
         recadosArrayList = deServlet;
-
-
         adapter = new RecadosAdapter(this, recadosArrayList);
         ListView listView = (ListView) findViewById(R.id.list_view_juan);
         if (recadosArrayList != null) {
+
             Log.d(getClass().getCanonicalName(), " recados array list size " + recadosArrayList.size());
             Collections.sort(recadosArrayList);
             sort = true;
@@ -138,7 +139,7 @@ public class JuanActivity extends AppCompatActivity {
         deServlet = gson.fromJson (s, new TypeToken<ArrayList<Recados>>() {
         }.getType());
         Log.d(getClass().getCanonicalName(), "Ha terminado  json = " + s);
-        Log.d(getClass().getCanonicalName(), " recados array list size juan activity " + deServlet.size());
+        Log.d(getClass().getCanonicalName(), " deServlet array list size juan activity " + deServlet.size());
     }
 
 
