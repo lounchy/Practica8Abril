@@ -115,9 +115,13 @@ public class ButtonListener implements View.OnClickListener {
 
     }
     private void limpiarEditText(){
+        et_nombre.setText("");
         et_nombre.setHint(R.string.c_mo_te_llamas);
+        et_direcion1.setText("");
         et_direcion1.setHint(R.string.cual_es_tu_direcci_n);
+        et_direcion2.setText("");
         et_direcion2.setHint(R.string.direcci_n_de_donde_hay_que_recoger);
+        et_descripcion.setText("");
         et_descripcion.setHint(R.string.describe_con_que_te_puedo_ayudar);
     }
 }
