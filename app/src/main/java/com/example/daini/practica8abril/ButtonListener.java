@@ -60,17 +60,17 @@ public class ButtonListener implements View.OnClickListener {
         sacarFechaHora();
         AsyncTaskRecados asyncTaskRecados = new AsyncTaskRecados(activity);
 
-           if (preparoLista.size()>1 &&deServlet!=null){
-            if (preparoLista.size()>=deServlet.size()){
-                preparoLista = deServlet;
-                preparoLista.add(new Recados(str_nombre, str_fecha, str_hora, str_direcion1, str_direcion2, str_descripcion));
+           if (preparoLista!=null &&deServlet!=null){//hay algo en los arrays
+            if (preparoLista.size()>=deServlet.size()){//en caso si ha sido borrado el dato de actividad juan
+                preparoLista = deServlet;//obtengo nueva lista
+                preparoLista.add(new Recados(str_nombre, str_fecha, str_hora, str_direcion1, str_direcion2, str_descripcion));//añado a la lista
             }
-        }else {
-               preparoLista.add(new Recados(str_nombre, str_fecha, str_hora, str_direcion1, str_direcion2, str_descripcion));
+        }else {//preparo lista es null
+               preparoLista.add(new Recados(str_nombre, str_fecha, str_hora, str_direcion1, str_direcion2, str_descripcion));//añado primer dato en la lista
            }
 
         Log.d(getClass().getCanonicalName(), " preparo lista size " + preparoLista.size());
-        asyncTaskRecados.enviarAlServlet(preparoLista);
+        asyncTaskRecados.enviarAlServlet(preparoLista);//actualizo lista enviando al servlet
 
 
 

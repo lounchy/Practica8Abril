@@ -23,6 +23,7 @@ public class UsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
+
         ButtonListener buttonListener = new ButtonListener(this);
         Button enviarRecado = (Button)findViewById(R.id.enviar_recado_b);
         enviarRecado.setOnClickListener(buttonListener);

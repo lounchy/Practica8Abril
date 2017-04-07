@@ -66,6 +66,7 @@ public class Recados implements Comparable<Recados> {
         this.hora = hora;
     }
 
+    //methodo ordenar
     @Override
     public int compareTo(Recados o) {
         String hora1 = this.getHora();

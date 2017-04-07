@@ -5,11 +5,9 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.example.daini.practica8abril.Activities.JuanActivity;
-import com.example.daini.practica8abril.Activities.UsuarioActivity;
 import com.example.daini.practica8abril.ButtonListener;
 import com.example.daini.practica8abril.Models.Recados;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
