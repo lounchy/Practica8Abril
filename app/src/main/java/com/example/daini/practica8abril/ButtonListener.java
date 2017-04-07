@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.daini.practica8abril.Activities.JuanActivity;
 import com.example.daini.practica8abril.Activities.UsuarioActivity;
@@ -58,6 +59,9 @@ public class ButtonListener implements View.OnClickListener {
         encontrarEditText();
         editTextToString();
         sacarFechaHora();
+        limpiarEditText();
+
+        Toast.makeText(activity, "EL recado ha sido enviado", Toast.LENGTH_SHORT).show();
         AsyncTaskRecados asyncTaskRecados = new AsyncTaskRecados(activity);
 
            if (preparoLista!=null &&deServlet!=null){//hay algo en los arrays
@@ -101,6 +105,7 @@ public class ButtonListener implements View.OnClickListener {
         Log.d(getClass().getCanonicalName(), "Current time => "+c.getTime() +" fecha = " + str_fecha + " hora " + str_hora);
 
     }
+
     public void getRecadosArrayList(String s){
         Gson gson = new Gson();
         deServlet = gson.fromJson (s, new TypeToken<ArrayList<Recados>>() {
@@ -108,5 +113,11 @@ public class ButtonListener implements View.OnClickListener {
         Log.d(getClass().getCanonicalName(), "Ha terminado  json = " + s);
         Log.d(getClass().getCanonicalName(), " deServlet array list size ButtonListener " + deServlet.size());
 
+    }
+    private void limpiarEditText(){
+        et_nombre.setHint(R.string.c_mo_te_llamas);
+        et_direcion1.setHint(R.string.cual_es_tu_direcci_n);
+        et_direcion2.setHint(R.string.direcci_n_de_donde_hay_que_recoger);
+        et_descripcion.setHint(R.string.describe_con_que_te_puedo_ayudar);
     }
 }

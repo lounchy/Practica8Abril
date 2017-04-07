@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Practica8Abril</string>
     <string name="id">id</string>
+    <string name="c_mo_te_llamas">¿Cómo te llamas?</string>
+    <string name="cual_es_tu_direcci_n">¿Cual es tu dirección?</string>
+    <string name="describe_con_que_te_puedo_ayudar">¿Describe con que te puedo ayudar?</string>
+    <string name="direcci_n_de_donde_hay_que_recoger">¿Dirección de donde hay que recoger?</string>
 </resources>

@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:hint="¿Cómo te llamas?"
+            android:hint="@string/c_mo_te_llamas"
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/direcion_et"
@@ -39,14 +39,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:hint="¿Cual es tu dirección?" />
+            android:hint="@string/cual_es_tu_direcci_n" />
         <EditText
             android:id="@+id/direcion2_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:hint="¿Dirección de donde hay que recoger?"
+            android:hint="@string/direcci_n_de_donde_hay_que_recoger"
             android:inputType="textPersonName"/>
 
         <EditText
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:hint="¿Describe con que te puedo ayudar?"
+            android:hint="@string/describe_con_que_te_puedo_ayudar"
             android:inputType="textPersonName"/>
 
 
